@@ -22,7 +22,7 @@ class M_admin extends CI_model
     {
         $this->db->WHERE('status', '1');
         $this->db->FROM('tb_user');
-        return $this->db->get();
+        return $this->db->count_all_results();
     }
     public function count_petugas()
     {
